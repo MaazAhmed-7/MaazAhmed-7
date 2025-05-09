@@ -1,1 +1,13 @@
-hello
+class Ab:
+    a=0
+    def Strength(self,a):
+        self.a=a
+        print("",self.a)
+class Bb(Ab):
+    b=0
+    def Strength(self,a,b):
+        super().Strength (a)
+        self.b=b
+        print("",self.b)
+obj_c=Bb()
+obj_c.Strength(7,9)
